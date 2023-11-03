@@ -18,7 +18,6 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-    overflow: hidden;
 }
 
 header {
@@ -29,6 +28,7 @@ header {
     text-align: center;
     padding: 0 10px;
     background-color: #00000090;
+    border-bottom: 2px solid #5e5e5e;
 }
 
 header>div {
@@ -113,6 +113,7 @@ main {
     height: 90vh;
     padding: 10px;
     color: #f2f2f2;
+    overflow: hidden;
 }
 
 .coffee {
@@ -137,6 +138,7 @@ main {
     border-radius: 20px;
     padding: 20px;
     position: relative;
+    border: 1px solid #c1c1c1;
 }
 
 .coffee-container h1 {
@@ -157,28 +159,66 @@ main {
     width: 30%;
     min-width: max-content;
     height: max-content;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 10px;
     background-color: #00000090;
     color: #f2f2f2;
+    font-variant: small-caps;
     cursor: pointer;
     position: relative;
+}
+
+.coffee-container button:hover {
+    background-color: #000000b0;
 }
 
 .coffee-images {
     width: 50%;
     height: 60vh;
     right: 0;
-    position: relative;
 }
 
-.coffee-images img {
+.coffee-images>div {
     width: 60%;
-    position: absolute;
-    padding-top: 20px;
+    height: 60vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.coffee-images>div .main-img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.coffee-icon {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.coffee-icon img {
+    position: absolute;
+    width: 80%;
+}
+
+.coffee-icon img:nth-child(1) {
+    left: 65%;
+    top: 27%;
+    z-index: 1;
+    rotate: -25deg;
+}
+
+.coffee-icon img:nth-child(2) {
+    left: 60%;
+    top: 57%;
+    z-index: 11;
+    rotate: 45deg;
 }
 
 .card {
@@ -189,7 +229,6 @@ main {
 }
 
 .card-description {
-    /* background-color: rgba(75, 75, 75, 0.623); */
     width: calc((100% - 30px) / 4);
     height: calc(30vh - 40px);
     display: inline-block;
@@ -221,14 +260,16 @@ main {
     font-size: .8em;
 }
 
-footer {
-    position: absolute;
-    bottom: -20vh;
+.footer {
+    position: relative;
+    bottom: 22vh;
     width: 150%;
-    background-color: #00000090;
     height: 50vh;
-    transform: rotate(-2deg);
+    left: -25%;
+    background-color: #000000b0;
+    transform: rotate(-3.5deg);
     z-index: -1;
+    border-top: 2px solid #fff;
 }
 
 
@@ -255,11 +296,11 @@ footer {
     .card-description img {
         width: 20%;
     }
-    
+
     .card-description h2 {
         font-size: 2em;
     }
-    
+
     .card-description p {
         font-size: 1em;
     }
@@ -278,11 +319,11 @@ footer {
     .card-description img {
         width: 20%;
     }
-    
+
     .card-description h2 {
         font-size: 1em;
     }
-    
+
     .card-description p {
         font-size: .7em;
     }
@@ -303,19 +344,14 @@ footer {
         font-size: .8em;
     }
 
-    .coffee-images img {
-        width: 80%;
-        padding-top: 20px;
-    }
-
     .card-description img {
         width: 25%;
     }
-    
+
     .card-description h2 {
         font-size: .8em;
     }
-    
+
     .card-description p {
         font-size: .5em;
     }
