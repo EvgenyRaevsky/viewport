@@ -18,7 +18,7 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 header {
@@ -225,7 +225,7 @@ main {
 
 .card-description {
     width: calc((100% - 30px) / 4);
-    height: calc(30% - 40px);
+    height: 100%;
     display: inline-block;
     font-size: 1rem;
     vertical-align: top;
@@ -233,6 +233,12 @@ main {
     text-align: center;
     padding: 10px;
     position: relative;
+}
+
+.card-description>div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .card-description_mr {
@@ -264,7 +270,7 @@ main {
     background-color: #000000b0;
     transform: rotate(-3.5deg);
     z-index: -1;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #828282;
 }
 
 
