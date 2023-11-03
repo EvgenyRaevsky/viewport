@@ -119,7 +119,7 @@ main {
 
 .coffee {
     width: 100%;
-    height: 60vh;
+    height: 60%;
     position: relative;
 }
 
@@ -133,7 +133,8 @@ main {
     align-items: center;
     justify-content: space-between;
     width: 50%;
-    height: 60vh;
+    min-height: max-content;
+    min-height: 100%;
     text-align: center;
     background-color: #41414190;
     border-radius: 20px;
@@ -175,13 +176,13 @@ main {
 
 .coffee-images {
     width: 50%;
-    height: 60vh;
+    height: 100%;
     right: 0;
 }
 
 .coffee-images>div {
     width: 60%;
-    height: 60vh;
+    height: 60%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -199,7 +200,7 @@ main {
 
 .coffee-icon {
     width: 100%;
-    height: 60vh;
+    height: 60%;
     position: relative;
 }
 
@@ -208,30 +209,23 @@ main {
     width: 80%;
 }
 
-.coffee-icon img:nth-child(1) {
-    left: 65%;
-    top: 27%;
-    z-index: 1;
-    rotate: -25deg;
-}
-
-.coffee-icon img:nth-child(2) {
+.coffee-icon img {
     left: 60%;
-    top: 57%;
+    top: 65%;
     z-index: 11;
     rotate: 45deg;
 }
 
 .card {
     width: 100%;
-    height: calc(30vh - 40px);
+    height: calc(40% - 40px);
     font-size: 0;
     margin-block: 20px;
 }
 
 .card-description {
     width: calc((100% - 30px) / 4);
-    height: calc(30vh - 40px);
+    height: calc(30% - 40px);
     display: inline-block;
     font-size: 1rem;
     vertical-align: top;
@@ -265,7 +259,7 @@ main {
     position: relative;
     bottom: 22vh;
     width: 150%;
-    height: 50vh;
+    height: 50%;
     left: -25%;
     background-color: #000000b0;
     transform: rotate(-3.5deg);
